@@ -1,12 +1,3 @@
-/*
-  1) Create start button in the middle instead of pressing a key to start
-  2) Cache last sequence
-  3) Cache longest sequence
-  4) Add 4 game levels: sequences (8, 16, 24, 32)
-  5) Add winner text/effects/sounds
-  6) Improve look
-*/
-
 (() => {
   const playCurrentGameSequence = () => {
     let count = 0;
