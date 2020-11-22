@@ -35,7 +35,7 @@
   };
 
   const playSound = (name) => {
-    const sound = new Audio(`sounds/${name}.mp3`);
+    const sound = new Audio(`/sounds/${name}.mp3`);
     sound.play();
   };
 
