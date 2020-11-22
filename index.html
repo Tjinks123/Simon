@@ -1,9 +1,22 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
     <title>Simon</title>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Local CSS -->
     <link rel="stylesheet" href="styles.css" />
+    <!-- Font -->
     <link
       href="https://fonts.googleapis.com/css?family=Press+Start+2P"
       rel="stylesheet"
@@ -11,20 +24,41 @@
   </head>
 
   <body>
-    <h1 id="level-title">Press A Key to Start</h1>
-    <div class="container">
-      <div class="row">
-        <div type="button" id="green" class="btn green"></div>
-
-        <div type="button" id="red" class="btn red"></div>
+    <!-- Old starter text in h1 = Press A Key to Start -->
+    <h1 id="level-title" class="text-center">SIMON</h1>
+    <div class="container text-center">
+      <div class="row justify-content-center">
+        <div type="button" id="green" class="simon-btn green"></div>
+        <div type="button" id="red" class="simon-btn red"></div>
       </div>
-
-      <div class="row">
-        <div type="button" id="yellow" class="btn yellow"></div>
-        <div type="button" id="blue" class="btn blue"></div>
+      <div class="row justify-content-center">
+        <div class="col start-col">
+          <label for="start" class="start-label">Start</label>
+          <button id="start" type="button" class="start"></button>
+        </div>
+      </div>
+      <div class="row justify-content-center ml-2">
+        <div class="col reset-col">
+          <label for="reset" class="reset-label">Reset</label>
+          <button id="reset" type="reset" class="reset"></button>
+        </div>
+        <div class="col difficulty-col">
+          <label for="difficulty" class="difficulty-label">Difficulty</label>
+          <select name="difficulty" id="difficulty" class="difficulty">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+          </select>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div type="button" id="yellow" class="simon-btn yellow"></div>
+        <div type="button" id="blue" class="simon-btn blue"></div>
       </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Local Scripts -->
     <script src="/index.js" charset="UTF-8"></script>
   </body>
 </html>

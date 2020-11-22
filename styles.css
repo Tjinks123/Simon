@@ -1,22 +1,51 @@
 body {
-  text-align: center;
   background-color: #011f3f;
+}
+
+label {
+  font-family: "Press Start 2P", cursive;
+  font-size: x-small;
+  font-weight: normal;
+  color: #fef2bf;
 }
 
 #level-title {
   font-family: "Press Start 2P", cursive;
   font-size: 3rem;
-  margin: 5%;
+  margin: 2%;
   color: #fef2bf;
 }
 
-.container {
-  display: block;
-  width: 50%;
-  margin: auto;
+.start-col,
+.reset-col {
+  max-width: 80px;
 }
 
-.btn {
+.start {
+  border-radius: 50%;
+  border: 3px solid black;
+  height: 30px;
+  width: 30px;
+  background-color: rgb(199, 2, 2);
+}
+
+.reset {
+  border-radius: 50%;
+  border: 3px solid black;
+  height: 30px;
+  width: 30px;
+  background-color: darkorange;
+}
+
+.difficulty-col {
+  max-width: 125px;
+}
+
+.difficulty {
+  height: 25px;
+}
+
+.simon-btn {
   margin: 25px;
   display: inline-block;
   height: 200px;
