@@ -14,22 +14,25 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
     <!-- Local CSS -->
     <link rel="stylesheet" href="styles.css" />
-    <!-- Font -->
-    <link
-      href="https://fonts.googleapis.com/css?family=Press+Start+2P"
-      rel="stylesheet"
-    />
   </head>
 
   <body>
     <!-- Old starter text in h1 = Press A Key to Start -->
     <h1 id="level-title" class="text-center">SIMON</h1>
     <div class="container text-center">
-      <div class="row justify-content-center">
-        <div type="button" id="green" class="simon-btn green"></div>
-        <div type="button" id="red" class="simon-btn red"></div>
+      <div class="row d-inline-flex">
+        <div class="col-xs-6 align-self-end">
+          <div type="button" id="green" class="simon-btn green"></div>
+        </div>
+        <div class="col-xs-6 align-self-start">
+          <div type="button" id="red" class="simon-btn red"></div>
+        </div>
       </div>
       <div class="row justify-content-center">
         <div class="col start-col">
@@ -52,12 +55,19 @@
           </select>
         </div>
       </div>
-      <div class="row justify-content-center">
-        <div type="button" id="yellow" class="simon-btn yellow"></div>
-        <div type="button" id="blue" class="simon-btn blue"></div>
+      <div class="row d-inline-flex">
+        <div class="col-xs-6 align-self-start">
+          <div type="button" id="yellow" class="simon-btn yellow"></div>
+        </div>
+        <div class="col-xs-6 align-self-end">
+          <div type="button" id="blue" class="simon-btn blue"></div>
+        </div>
       </div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Bootstrap Scripts -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <!-- Local Scripts -->
     <script src="index.js" charset="UTF-8"></script>
   </body>

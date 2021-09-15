@@ -12,7 +12,7 @@ label {
 #level-title {
   font-family: "Press Start 2P", cursive;
   font-size: 3rem;
-  margin: 2%;
+  margin: 5%;
   color: #fef2bf;
 }
 
@@ -46,11 +46,11 @@ label {
 }
 
 .simon-btn {
-  margin: 25px;
+  margin: 0.3rem;
   display: inline-block;
-  height: 200px;
-  width: 200px;
-  border: 10px solid black;
+  height: 8rem;
+  width: 8rem;
+  border: 0.5rem solid black;
   border-radius: 20%;
 }
 
